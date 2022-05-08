@@ -18,6 +18,8 @@ connect.then((db)=>{
 const hostname='localhost';
 const port = config.PORT;
 
+app.use(cors()) 
+
 app.use('/', index.router);
 
 
